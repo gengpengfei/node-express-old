@@ -1,0 +1,38 @@
+<div class="diary_comment_title">
+    <span>+ + 留言版 + +</span>
+</div>
+<% comments.forEach(function (comment) { %>
+<div class="diary_comment_main">
+    <div class="left diary_comment_header">
+      <img src="/img/<%= comment.author.avatar %>">
+    </div>
+    <div class="right diary_comment_count">
+        <div>
+            <span><%= comment.author.name %></span><a class="" href="/diary/index?author=<%= comment.author._id %>"><span>查看楼主</span></a>
+            <% if (user && comment.author._id && user._id.toString() === comment.author._id.toString()) { %>
+            <a  href="/diary/removeComment/<%= comment._id %>"><span>删除</span></a>
+            <% } %>
+        </div>
+        <div>
+            <span><%= comment.created_at %></span>
+        </div>
+        <div ><span><%- comment.content %></span></div>
+    </div>
+</div>
+<% }) %>
+<div class="clear"></div>
+<% if (user) { %>
+<div class="form">
+    <form method="post" action="/diary/comment/<%= diary._id %>" enctype="multipart/form-data">
+        <div>
+            <textarea name="content" class="w1024"></textarea>
+        </div>
+        <div class="butbox">
+            <input type="button" class="button" onclick="history.go(0)" value="取消">
+            <input type="submit" class="button" value="确定">
+        </div>
+    </form>
+</div>
+<% }else{ %>
+    <div class="diary_comment_tishi">登陆之后方可以留言</div>
+<% } %>

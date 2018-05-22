@@ -1,0 +1,43 @@
+<%- include('public/header') %>
+<div class="container">
+    <div class="content">
+      <div class="form w600">
+        <form method="post" enctype="multipart/form-data">
+          <div>
+            <label>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</label>
+            <input placeholder="用户名" type="text" name="name">
+          </div>
+          <div>
+            <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+            <input placeholder="密码" type="password" name="password">
+          </div>
+          <div>
+            <label>重复密码</label>
+            <input placeholder="重复密码" type="password" name="repassword">
+          </div>
+          <div>
+            <label>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+            <select class="" name="gender">
+              <option value="m">男</option>
+              <option value="f">女</option>
+              <option value="x">保密</option>
+            </select>
+          </div>
+          <div>
+            <label>头&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;像</label>
+            <input type="file" name="avatar">
+          </div>
+          <div>
+            <label>个人简介</label>
+            <textarea name="bio" rows="5"></textarea>
+          </div>
+          <div class="butbox">
+            <input type="button" class="button" onclick="history.go(-1)" value="取消">
+            <input type="submit" class="button" value="注册">
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+<%- include('public/footer') %>

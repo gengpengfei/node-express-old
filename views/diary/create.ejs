@@ -1,0 +1,31 @@
+<%- include('../public/header') %>
+<div class="container">
+    <div class="content">
+        <div class="diary_create_info w600">
+            <a class="avatar avatar-link"
+               href="/posts?author=<%= user._id %>"
+               data-title="<%= user.name %> | <%= ({m: '男', f: '女', x: '保密'})[user.gender] %>"
+               data-content="<%= user.bio %>">
+                <img class="avatar" src="/img/<%= user.avatar %>">
+            </a>
+        </div>
+
+        <div class="form w600">
+            <form method="post" enctype="multipart/form-data">
+                <div>
+                    <label>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题</label>
+                    <input type="text" name="title">
+                </div>
+                <div>
+                    <label>内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容</label>
+                    <textarea name="content" rows="15"></textarea>
+                </div>
+                <div class="butbox">
+                    <input type="button" class="button" onclick="history.go(-1)" value="取消">
+                    <input type="submit" class="button" value="发布">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('../public/footer') %>

@@ -1,0 +1,13 @@
+<%- include('../public/header') %>
+<div class="container">
+    <div class="content w1024">
+        <% diary.forEach(function (diary) { %>
+        <%- include('diary-content', { diary: diary }) %>
+        <% }) %>
+        <div class="butbox">
+            <a href="/diary/create"><span class="button" style="width: 1024px" >创建日志</span></a>
+        </div>
+    </div>
+
+</div>
+<%- include('../public/footer') %>

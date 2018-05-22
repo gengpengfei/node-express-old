@@ -1,0 +1,89 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size:14px;
+    font-family: "微软雅黑";
+    vertical-align: baseline;
+    background: transparent;
+}
+a{text-decoration: none;color:#000000;}
+input{outline:none  }
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+.left{float: left;}
+.right{float: right;}
+.clear{clear: both;}
+.b{border:1px solid red;}
+.r{color: red;}
+.w1024{width: 1024px;}
+.w600{width: 600px;}
+.w400{width: 400px;}
+.bg{background-color:#24292E;}
+.hbg{background-color: #40464B;}
+/*提示框样式*/
+.flash{height: 30px;}
+
+/*form 样式*/
+.form{
+    height: auto;
+    margin: 0 auto;
+}
+.form div{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    color: #393939;
+}
+.form div label{
+    width: 15%;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+.form div input,textarea{
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    padding:8px;
+    margin: 0 auto;
+    border: 1px solid #EDEDED;
+}
+/*按钮样式*/
+.butbox{
+    width: 100%;
+}
+.butbox .button{
+    display:inline-block;
+    float: left;
+    width: 50%;
+    height:auto;
+    padding:8px 0px;
+    border:none;
+    color: #E5E5E5;
+    font-size:16px;
+    border-radius:5px;
+    background-color:#24292E;
+    text-decoration:none;
+    text-align: center;
+}
+.butbox .button:hover{
+    color: #E5E5E5;
+    background-color: #40464B;
+}

@@ -1,0 +1,33 @@
+<%- include('../public/header') %>
+<div class="container">
+    <div class="content w1024">
+        <div class="diary_info_count">
+            <div class="diary_info_img left">
+                <a href="/diary/index?author=<%= diary.author._id %>"
+                   data-title="<%= diary.author.name %> | <%= ({m: '男', f: '女', x: '保密'})[diary.author.gender] %>"
+                   data-content="<%= diary.author.bio %>">
+                    <img src="/img/<%= diary.author.avatar %>">
+                </a>
+                <span><%= diary.author.name %></span>
+            </div>
+            <div class="diary_info_main right">
+                <a href="javascript:void(0)"><%= diary.title %></a>
+                <div>
+                    <span>留言(<%= diary.commentsCount %>)</span>
+                    <span>浏览(<%= diary.pv %>)</span>
+                    <span><%= diary.created_at %></span>
+                </div>
+                <pre><%- diary.content %></pre>
+                <div>
+                    <% if (user && diary.author._id && user._id.toString() === diary.author._id.toString()) { %>
+                    <span><a href="/diary/edit/<%= diary._id %>">编辑</a></span>
+                    <span><a href="/diary/remove/<%= diary._id %>">删除</a></span>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <%- include('comment') %>
+    </div>
+</div>
+<%- include('../public/footer') %>

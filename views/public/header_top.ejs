@@ -1,0 +1,30 @@
+<% if (success) { %>
+<div class="flash success">
+    <p><%= success %></p>
+</div>
+<% } %>
+<% if (error) { %>
+<div class="flash error">
+    <p><%= error %></p>
+</div>
+<% } %>
+<div class="container bg">
+    <div class="content about">
+        <div class="abs">
+            <% if (user) { %>
+                <a href="/users/loginout">退出登录</a>
+                <a href="javascript:void(0)"><%= user.name %></a>
+            <% } else { %>
+                <a href="/users/reg">注册</a>
+                <a href="/users/login">登录</a>
+            <% } %>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="content">
+        <div class="head w">
+            <a href="/"><img src="/images/logo.jpg"></a>
+        </div>
+    </div>
+</div>

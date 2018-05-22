@@ -1,0 +1,13 @@
+<script type="text/javascript">
+   // 使通知框延时自动从页面删除
+   $(document).ready( function () {
+      // 延时清除掉成功、失败提示信息
+      if ($('.success').length > 0) {
+        $('.success').fadeOut(2000)
+      } else if ($('.error').length > 0) {
+        $('.error').fadeOut(2000)
+      }
+    })
+  </script>
+  </body>
+</html>

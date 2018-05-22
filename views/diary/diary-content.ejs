@@ -1,0 +1,19 @@
+<div class="diary_index_count">
+    <div class="diary_index_img left">
+        <a href="/diary/index?author=<%= diary.author._id %>"
+           data-title="<%= diary.author.name %> | <%= ({m: '男', f: '女', x: '保密'})[diary.author.gender] %>"
+           data-content="<%= diary.author.bio %>">
+            <img src="/img/<%= diary.author.avatar %>">
+        </a>
+        <span><%= diary.author.name %></span>
+    </div>
+    <div class="diary_index_info right">
+        <a href="/diary/info/<%= diary._id %>"><%= diary.title %></a>
+        <pre><%- diary.content %></pre>
+        <div>
+            <span>留言(<%= diary.commentsCount %>)</span>
+            <span>浏览(<%= diary.pv %>)</span>
+            <span><%= diary.created_at %></span>
+        </div>
+    </div>
+</div>

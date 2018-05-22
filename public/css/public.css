@@ -1,0 +1,243 @@
+/*主内容区样式*/
+.container{
+    width:100%;
+}
+.content{
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+/*header_top开始*/
+.flash{
+    position: absolute;
+    top:8%;
+    left:40%;
+    background-color: rgba(228,230,227,0.56);
+    width: 400px;
+    height: auto;
+    padding:10px;
+    text-align: center;
+    border:1px solid #EAEAEA;
+}
+.success{
+    color:#34DC7D;
+}
+.error{
+    color: #D32C15;
+}
+.about{
+    height: 30px;
+}
+.abs{
+    float: left;
+    line-height: 30px;
+    overflow:hidden;
+}
+.abs a{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #F2F2F2;
+}
+.head{
+    height: 100px;
+    display: table;
+}
+.head>a{
+    width: 100px;
+    display: inline-block;
+}
+.head img{
+    height:100px;
+    width:160px;
+}
+/*header_top结束*/
+
+/*header_nav开始*/
+ .nav{
+     width:100%;
+     overflow:hidden;
+     display:table;
+ }
+.nav li{
+    text-align:center;
+    vertical-align:middle;
+    height: 40px;
+    line-height: 40px;
+    color:white;
+    display:table-cell;
+    border:1px solid white;
+}
+.nav li:hover{
+    background-color:#40464B;
+}
+.nav li a{
+    color:white;
+    display:block;
+    position:relative;
+}
+.nav li span{
+    position:relative;
+    font-size: 16px;
+}
+/*header_nav结束*/
+
+/*dirary/index开始*/
+.diary_index_count{
+    height: 140px;
+    width: 100%;
+    margin-top: 20px;
+}
+.diary_index_img{
+    width: 10%;
+    padding:6px;
+    margin-right: 2%;
+    border: 1px solid #000000;
+}
+.diary_index_img>a>img{
+    width: 100%;
+    text-align: center;
+}
+.diary_index_img span{
+    display: block;
+    text-align: center;
+    color: #494b47;
+}
+.diary_index_info{
+    width: 85%;
+}
+.diary_index_info>a{
+    display: block;
+    width: 100%;
+    padding:8px 0px;
+    border-bottom: 1px solid #000000;
+}
+.diary_index_info pre{
+    display: block;
+    width: 100%;
+    height:70px;
+    overflow: hidden;
+    padding:8px 0px;
+}
+.diary_index_info pre p{
+    width: 100%;
+    white-space: normal;
+    line-height: 24px;
+    color: #3f3f3f;
+}
+.diary_index_info>div>span{
+    display: inline-block;
+    float: right;
+    color: #696969;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+/*diary/index结束*/
+
+/*diary/info开始*/
+.diary_info_count{
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.diary_info_img{
+    width: 10%;
+    padding:6px;
+    margin-right: 2%;
+    border: 1px solid #000000;
+}
+.diary_info_img>a>img{
+    width: 100%;
+    text-align: center;
+}
+.diary_info_img span{
+    display: block;
+    text-align: center;
+    color: #494b47;
+}
+.diary_info_main{
+    width: 85%;
+}
+.diary_info_main>a{
+    display: block;
+    width: 100%;
+    padding:8px 0px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+.diary_info_main pre{
+    display: block;
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    padding:8px 0px;
+}
+.diary_info_main pre p{
+    line-height: 24px;
+    color: #3f3f3f;
+}
+.diary_info_main>div>span{
+    display: inline-block;
+    float: right;
+    color: #696969;
+    margin-left: 10px;
+}
+/*diary/info结束*/
+
+/*dirary/create开始*/
+.diary_create_info{
+    height: auto;
+    margin: 0 auto;
+}
+.diary_create_info img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+/*dirary/create结束*/
+
+/*diary/comment开始*/
+.diary_comment_title{
+    width: 100%;
+    height: auto;
+    padding:8px 0;
+    border-bottom: 1px solid #24292E;
+}
+.diary_comment_main{
+    width: 100%;
+    height: auto;
+}
+.diary_comment_main .diary_comment_header{
+    margin:20px 0;
+    width: 70px;
+    height: 70px;
+    padding:5px;
+    border:1px solid #24292E;
+}
+.diary_comment_main .diary_comment_header img{
+    width: 100%;
+    height: 100%;
+}
+.diary_comment_count{
+    width: 90%;
+}
+.diary_comment_count div{
+    width: 100%;
+    height: auto;
+    margin:10px 0;
+}
+.diary_comment_count div span{
+    display: inline-block;
+    margin-right:10px;
+    color: #696969;
+}
+.diary_comment_tishi{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-top:10px ;
+}
+/*diary/comment结束*/
